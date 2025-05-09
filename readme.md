@@ -29,9 +29,11 @@ MicroAuth es un microservicio de autenticación que maneja el **registro de usua
 - **Si el usuario se registra correctamente, la respuesta será**:
   ```json
   {
-    "username": "nombre_de_usuario",
-    "email": "correo@ejemplo.com",
-    "password": "contraseña_segura"
+  "message": "User created successfully",
+    "user": {
+        "acknowledged": true,
+        "insertedId": "681d9f1bbcad52991d0564d3"
+    }
   }
 
 ### ❌ Respuestas de Error (400)

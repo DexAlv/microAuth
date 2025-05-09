@@ -19,12 +19,15 @@ export async function connectToMongoDB() {
     try {
         await client.connect();
         db = client.db("login_db");
+        await db.collection('users').createIndex({ email: 1 }, { unique: true });
+        await db.collection('users').createIndex({ username: 1 }, { unique: true });
         console.log("🟢 Successfully connected to MongoDB");
     } catch (error) {
         console.error("🔴", error);
         process.exit(1);
     }
 }
+
 
 export function getDB() {
     if (!db) { 
