@@ -48,16 +48,24 @@ MicroAuth es un microservicio de autenticación que maneja el **registro de usua
     "message": "Username already exists"
     }
 
-## Instrucciones de instalación
-1. Clonar el repositorio
-`git clone https://github.com/DexAlv/microAuth.git`
-2. Navegar al proyecto.
-`cd microAuth`
-3. Instalar dependencias.
-`npm install`
-4. Modificar el archivo [.env.example] con tus credenciales.
-5. Iniciar el servidor.
-`npm start`
+## Instalación
+- ### En Unix/macOS/Git Bash
+    ```bash
+    {
+        git clone https://github.com/DexAlv/microAuth.git
+        cd microAuth
+        npm install
+        npm start
+    }
+- ### En Windows PowerShell
+    ```bash
+    {
+        git clone https://github.com/DexAlv/microAuth.git
+        cd microAuth
+        npm install
+        Copy-Item .env.example .env
+        npm start
+    }
 
 ## Notas
 Actualmente microAuth solo maneja el registro de usuarios. En el futuro se tiene planeado agregar un microservicio de login y autenticación de sesiones.
