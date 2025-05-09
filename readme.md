@@ -51,21 +51,21 @@ MicroAuth es un microservicio de autenticación que maneja el **registro de usua
 ## Instalación
 - ### En Unix/macOS/Git Bash
     ```bash
-    {
+    
         git clone https://github.com/DexAlv/microAuth.git
         cd microAuth
         npm install
         npm start
-    }
+    
 - ### En Windows PowerShell
     ```bash
-    {
+    
         git clone https://github.com/DexAlv/microAuth.git
         cd microAuth
         npm install
         Copy-Item .env.example .env
         npm start
-    }
+    
 
 ## Notas
 Actualmente microAuth solo maneja el registro de usuarios. En el futuro se tiene planeado agregar un microservicio de login y autenticación de sesiones.
