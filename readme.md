@@ -26,28 +26,27 @@ MicroAuth es un microservicio de autenticación que maneja el **registro de usua
 
 ### Respuesta exitosa (201)
 
-Si el usuario se registra correctamente, la respuesta será:
-
-```json
-{
-  "username": "nombre_de_usuario",
-  "email": "correo@ejemplo.com",
-  "password": "contraseña_segura"
-}```
+- **Si el usuario se registra correctamente, la respuesta será**:
+  ```json
+  {
+    "username": "nombre_de_usuario",
+    "email": "correo@ejemplo.com",
+    "password": "contraseña_segura"
+  }
 
 ### Respuestas de Error (400)
 
-Si ya hay un usuario con ese correo:
-```json
-{
-  "message": "Email already exists"
-}```
+- **Si ya hay un usuario con ese correo**:
+    ```json
+    {
+    "message": "Email already exists"
+    }
 
-Si ya hay un usuario con ese username:
-```json
-{
-  "message": "Username already exists"
-}```
+- **Si ya hay un usuario con ese username**:
+    ```json
+    {
+    "message": "Username already exists"
+    }
 
 ## Instrucciones de instalación
 1. Clonar el repositorio
