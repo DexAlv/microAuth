@@ -33,7 +33,7 @@ Si el usuario se registra correctamente, la respuesta será:
   "username": "nombre_de_usuario",
   "email": "correo@ejemplo.com",
   "password": "contraseña_segura"
-}
+}```
 
 ### Respuestas de Error (400)
 
@@ -41,13 +41,13 @@ Si ya hay un usuario con ese correo:
 ```json
 {
   "message": "Email already exists"
-}
+}```
 
 Si ya hay un usuario con ese username:
 ```json
 {
   "message": "Username already exists"
-}
+}```
 
 ## Instrucciones de instalación
 1. Clonar el repositorio
