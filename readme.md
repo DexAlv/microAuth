@@ -24,7 +24,7 @@ MicroAuth es un microservicio de autenticación que maneja el **registro de usua
 
 ## Entendiendo las respuestas
 
-### Respuesta exitosa (201)
+### ✅ Respuesta exitosa (201)
 
 - **Si el usuario se registra correctamente, la respuesta será**:
   ```json
@@ -34,7 +34,7 @@ MicroAuth es un microservicio de autenticación que maneja el **registro de usua
     "password": "contraseña_segura"
   }
 
-### Respuestas de Error (400)
+### ❌ Respuestas de Error (400)
 
 - **Si ya hay un usuario con ese correo**:
     ```json
@@ -49,23 +49,25 @@ MicroAuth es un microservicio de autenticación que maneja el **registro de usua
     }
 
 ## Instalación
-- ### En Unix/macOS/Git Bash
+- ### 🐧 En Unix/macOS/Git Bash
     ```bash
-    
+
         git clone https://github.com/DexAlv/microAuth.git
         cd microAuth
         npm install
+        cp .env.example .env
         npm start
+
     
-- ### En Windows PowerShell
+- ### 🪟 En Windows PowerShell
     ```bash
-    
+
         git clone https://github.com/DexAlv/microAuth.git
         cd microAuth
         npm install
         Copy-Item .env.example .env
         npm start
-    
+
 
 ## Notas
 Actualmente microAuth solo maneja el registro de usuarios. En el futuro se tiene planeado agregar un microservicio de login y autenticación de sesiones.
